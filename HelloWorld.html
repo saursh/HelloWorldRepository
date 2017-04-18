@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaSript Example </title>
+        <script type="text/javascript">
+        function buttonclicked() {
+            var myValue=document.getElementById('myTextBox').value;
+            if(myValue.length==0){
+                alert('Please enter a valid name');
+                return;
+            }
+            var headernode=document.getElementById('myHeader');
+            headernode.innerText= "Hello " + myValue;
+        }
+        </script>
+    </head>
+    <body>
+        <h1 id="myHeader"> Javascript Example </h1>
+        <input type="text" id="myTextBox">
+        <input type="submit" value="Click me" onclick="buttonclicked()"/>
+        
+    </body>
+</html>
